@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta http-equiv="refresh" content="99">
+<title>calculator dengan JavaScript</title>
+<link rel="stylesheet" type="text/css" href="calculator.css">
+<script src="calculator.js"></script>
+</head>
+<body lang=EN-ID link="#0563C1" vlink="#954F72" id="b0">
+<div class="container">
+<div class="header">
+<h1>Aplikasi Calculator Dengan JavaScript</h1>
+<p> Aplikasi ini khusus dibuat dengan CSS, HTML, dan JavaScript
+</p>
+</div>
+<div class="content">
+<h2 id="h0">Menampilkan Hasil Perhitungan dengan JavaScript</h2>
+<p>
+<form id="form1" name="form1" onsubmit="return false" autocomplete="on">
+<fieldset id="input1">
+<legend>Pilih Nama Dan Oprator</legend>
+<br>
+<label for="text1">Masukkan nilai pertama: </label>
+<input type="text" id="text1" onkeyup="tulis()" name="text1" title="ketik nilai" autofocus>
+<label for="select">Pilih oprator: </label>
+<select id="select" onchange="pilih()" name="select" disabled="disabled">
+<option value="a" selected>Pilih</option>
+<option value="akar">Akar</option>
+<option value="bagi">Bagi</option>
+<option value="kali">Kali</option>
+<option value="kpk">KPK</option>
+<option value="kurang">Kurang</option>
+<option value="modulus">Modulus</option>
+<option value="pangkat">Pangkat</option>
+<option value="tambah">Tambah</option>
+</select>
+</fieldset>
+<label for="text2">Masukkan nilai ke dua: </label>
+<input type="text" id="text2" onkeyup="cek()" name="text2" title="ketik nilai" disabled="disabled">
+<fieldset id='input2'>
+<legend>Silahkan Klik hitung untuk mengetahui hasil-nya, atau klik reset untuk mengulangi pengisian form</legend>
+<input type="submit" id="hitung" value="hitung" onclick="tampilkan()" disabled="disabled">
+<input type="reset" id="reset" onclick="back()" disabled="disabled">
+</fieldset>
+</form>
+</p>
+<p>
+<script>
+var idbulan=["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+var idhari=["Minggu","Senin","Selasa","Rabu","Kamis","Jum&#39;at","Sabtu"];
+var date=new Date();
+var tahun=date.getFullYear();
+var bulan=date.getMonth();
+var tanggal=date.getDate();
+var hari=date.getDay();
+var jam=date.getHours();
+var menit=date.getMinutes();
+var sekarang="<p>sekarang "+idhari[hari]+", "+tanggal+"-"+idbulan[bulan]+"-"+tahun+"<br/>"+jam+" : "+menit+".</p>";
+document.write(sekarang);
+</script>
+</p>
+</div>
+<div class="footer">
+<p>copyright 2020 <a href="https://www.dicoding.com/users/445758/academies">Jejen Juanda </a></p>
+</div>
+</div>
+</body>
+</html>
