@@ -136,6 +136,7 @@ var Y=document.getElementById("form1").select;
 var z=document.getElementById("form1").reset;
 var Z=document.getElementById("form1").hitung;
 Z.disabled = true;
+z.value ="reset";
 z.disabled = true;
 y.disabled = true;
 Y.disabled = true;
