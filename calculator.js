@@ -72,7 +72,7 @@ p_kontainer.innerHTML="<h2>hasil</h2>"+"telah diketahui, sebuah nilai ="+nilai1+
 else if (nilai1 != "" && oprator =="bilangan" && nilai2 =="")
 {
 var i=nilai1;
-if(i<=0)
+if(i<=1)
 {
 var hasil ="bilangan Cacah";
 }
@@ -102,7 +102,7 @@ alert('Anda harus mengisi form dengan lengkap !');
 function kembali()
 {
 var b_kontainer=document.getElementById("form1");
-b_kontainer.innerHTML="<form id='form1' name='form1' onsubmit='return false' autocomplete='on'> <fieldset id='input1'> <legend>Pilih Nama Dan Oprator</legend> <br> <label for='text1'>Masukkan nilai pertama: </label> <input type='text' id='text1' onkeyup='tulis()' name='text1' title='ketik nilai' autofocus> <label for='select'>Pilih oprator: </label> <select id='select' onchange='pilih()' name='select' disabled='disabled'> <option value='a' selected>Pilih</option> <option value='akar'>Akar</option> <option value='bagi'>Bagi</option> <option value='bilangan'>Cek Bilangan</option> <option value='kali'>Kali</option> <option value='kpk'>KPK</option> <option value='kurang'>Kurang</option> <option value='modulus'>Modulus</option> <option value='pangkat'>Pangkat</option> <option value='tambah'>Tambah</option> </select> </fieldset> <label for='text2'>Masukkan nilai ke dua: </label> <input type='text' id='text2' onkeyup='cek()' name='text2' title='ketik nilai' disabled='disabled'> <fieldset id='input2'> <legend>Silahkan Klik hitung untuk mengetahui hasil-nya, atau klik reset untuk mengulangi pengisian form</legend> <input type='submit' id='hitung' value='hitung' onclick='tampilkan()' disabled='disabled'> <input type='reset' id='reset' onclick='back()' disabled='disabled'> </fieldset> </form>";
+b_kontainer.innerHTML="<form id='form1' name='form1' onsubmit='return false' autocomplete='on'> <fieldset id='input1'> <legend>Pilih Nama Dan Oprator</legend> <br> <label for='text1'>Masukkan nilai pertama: </label> <input type='text' id='text1' onkeyup='tulis()' name='text1' title='ketik nilai' autofocus> <label for='select'>Pilih oprator: </label> <select id='select' onchange='pilih()' name='select' disabled='disabled'> <option value='a' selected>Pilih</option> <option value='akar'>Akar</option> <option value='bagi'>Bagi</option> <option value='bilangan'>Cek Tipe Bilangan</option> <option value='kali'>Kali</option> <option value='kpk'>KPK</option> <option value='kurang'>Kurang</option> <option value='modulus'>Modulus</option> <option value='pangkat'>Pangkat</option> <option value='tambah'>Tambah</option> </select> </fieldset> <label for='text2'>Masukkan nilai ke dua: </label> <input type='text' id='text2' onkeyup='cek()' name='text2' title='ketik nilai' disabled='disabled'> <fieldset id='input2'> <legend>Silahkan Klik hitung untuk mengetahui hasil-nya, atau klik reset untuk mengulangi pengisian form</legend> <input type='submit' id='hitung' value='hitung' onclick='tampilkan()' disabled='disabled'> <input type='reset' id='reset' onclick='back()' disabled='disabled'> </fieldset> </form>";
 }
 function tulis()
 {
