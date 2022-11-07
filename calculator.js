@@ -99,7 +99,7 @@ Hasil="bilangan Ganjil";
 var p_kontainer=document.getElementById("form1");
 if (oprator=="bilangan")
 {
-p_kontainer.innerHTML="<h2>hasil</h2>"+"telah diketahui, sebuah nilai ="+nilai1+".<br>maka, "+nilai1+" adalah "+hasil+".<br>Angka "+nilai1+" juga merupakan "+Hasil+".<br>"+back;
+p_kontainer.innerHTML="<h2>hasil</h2>"+"telah diketahui, sebuah angka ="+nilai1+".<br>maka, "+nilai1+" adalah "+hasil+".<br>Angka "+nilai1+" juga merupakan "+Hasil+".<br>"+back;
 }
 }
 else
@@ -169,14 +169,17 @@ s.disabled = true;
 }
 function back()
 {
-var y=document.getElementById("form1").text2;
-var Y=document.getElementById("form1").select;
-var z=document.getElementById("form1").reset;
-var Z=document.getElementById("form1").hitung;
-Z.disabled = true;
-z.value ="reset";
-z.disabled = true;
+var V=document.getElementById("form1").text1;
+var y=document.getElementById("form1").select;
+var Y=document.getElementById("form1").text2;
+var z=document.getElementById("form1").hitung;
+var Z=document.getElementById("form1").reset;
+V.value ="";
+y.value ="";
+Y.value ="";
 y.disabled = true;
 Y.disabled = true;
+z.disabled = true;
+Z.disabled = true;
 alert('Form telah di reset, silahkan isi kembali!');
 }
