@@ -87,10 +87,19 @@ hasil = "Bilangan Komposit";
 }
 }
 }
+var j=nilai1;
+if (j %2 ==0)
+{
+var Hasil ="bilangan Genap";
+}
+else
+{
+Hasil="bilangan Ganjil";
+}
 var p_kontainer=document.getElementById("form1");
 if (oprator=="bilangan")
 {
-p_kontainer.innerHTML="<h2>hasil</h2>"+"telah diketahui, sebuah nilai ="+nilai1+".<br>maka, "+nilai1+" adalah "+hasil+"."+back;
+p_kontainer.innerHTML="<h2>hasil</h2>"+"telah diketahui, sebuah nilai ="+nilai1+".<br>maka, "+nilai1+" adalah "+hasil+".<br>Angka "+nilai1+" juga merupakan "+Hasil+".<br>"+back;
 }
 }
 else
